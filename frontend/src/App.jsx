@@ -91,7 +91,7 @@ const App = () => {
                         value={location}
                         onChange={(e) => setLocation(e.target.value)}
                         className="fc aci"
-                        type="text"
+                        type="search"
                         placeholder="City or state"
                     />
                 </div>
