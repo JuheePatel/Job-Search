@@ -12,6 +12,55 @@ body {
   flex-direction: column;
 }
 
+.header-nav {
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 15px;
+}
+
+.header-title {
+  margin-top: 15px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.header-nav button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header-nav button:nth-child(1) {
+  background-color: #28a745;
+  color: white;
+}
+
+.header-nav button:nth-child(2) {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.header-nav button:nth-child(3) {
+  background-color: #ffc107;
+  color: white;
+}
+
+.header-nav button:hover {
+  filter: brightness(85%);
+}
+
+.header-nav .active-tab {
+  border: 2px solid black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  color: black;
+}
+
 .container {
   background-color: #fff;
   border-radius: 8px;
