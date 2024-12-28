@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './App.css';
 import JobSearch from './Components/JobSearch';
 import SubmitSkill from './Components/SubmitSkill';
-import CompareCareers from './Components/CompareCareers';
 
 const App = () => {
   const [activeComponent, setActiveComponent] = useState('JobSearch');
@@ -13,8 +12,6 @@ const App = () => {
         return <JobSearch />;
       case 'SubmitSkill':
         return <SubmitSkill />;
-      case 'CompareCareers':
-        return <CompareCareers />;
       default:
         return null;
     }
@@ -35,13 +32,7 @@ const App = () => {
             className={activeComponent === 'SubmitSkill' ? 'active-tab' : ''}
             onClick={() => setActiveComponent('SubmitSkill')}
           >
-            Submit Skill
-          </button>
-          <button
-            className={activeComponent === 'CompareCareers' ? 'active-tab' : ''}
-            onClick={() => setActiveComponent('CompareCareers')}
-          >
-            Compare Careers
+            Get Skills
           </button>
         </nav>
       </header>
