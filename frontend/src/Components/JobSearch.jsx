@@ -96,7 +96,7 @@ const JobSearch = () => {
                 </div>
 
                 <div className="form-group">
-                    <button type="submit" className="btn btn-primary btn-l">
+                    <button id="next-button" type="submit" className="btn btn-primary btn-l">
                         Search
                     </button>
                 </div>
